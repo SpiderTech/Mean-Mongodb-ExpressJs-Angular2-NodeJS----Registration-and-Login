@@ -1,0 +1,24 @@
+{
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "Registration login",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiderTech/Mean-RL.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpiderTech/Mean-RL/issues"
+  },
+  "homepage": "https://github.com/SpiderTech/Mean-RL#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.12.4",
+    "nodemon": "^1.12.1"
+  }
+}
