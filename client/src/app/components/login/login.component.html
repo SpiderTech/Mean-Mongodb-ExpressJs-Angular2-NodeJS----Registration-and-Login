@@ -1,0 +1,35 @@
+<h1 class="page-header">Login</h1>
+<div class="row show-hide-message">
+    <div [ngClass]="messageCls">
+        {{message}}
+    </div>
+</div>
+<form [formGroup]="form" (submit)="onLoginSubmit()">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <div [ngClass]="{'has-error':(form.controls.username.errors && form.controls.username.dirty),
+                         'has-success':!form.controls.username.errors}">
+            <input type="text" class="form-control" placeholder="*username" 
+            formControlName="username" autocomplete="off">
+           <ul class="help-block">
+               <li *ngIf="form.controls.username.errors?.required && form.controls.username.dirty">
+                   This Field is required
+               </li>
+           </ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">password</label>
+        <div [ngClass]="{'has-error':(form.controls.password.errors && form.controls.password.dirty),
+                         'has-success':!form.controls.password.errors}">
+            <input type="password" class="form-control" placeholder="*password" 
+            formControlName="password" autocomplete="off">
+            <ul class="help-block">
+                <li *ngIf="form.controls.password.errors?.required && form.controls.password.dirty">
+                    This Field is required
+                </li>
+            </ul>
+        </div>
+    </div>
+    <input [disabled]="!form.valid" type="submit" class="btn btn-primary" value="SignIn!">
+</form>

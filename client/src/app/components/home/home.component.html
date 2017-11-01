@@ -1,0 +1,67 @@
+<div class="jumbotron text-center">
+    <h1>Mean Register Login</h1>
+    <p>Welcome to the MEAN Stack Application</p>
+    <div>
+        <a *ngIf="!authService.loggedIn()" routerLink="/register" class="btn btn-primary">Register</a>
+        <a *ngIf="authService.loggedIn()" routerLink="/dashboard" class="btn btn-info">Dashboard</a>
+        <a *ngIf="!authService.loggedIn()" routerLink="/login" class="btn btn-warning">Login</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="https://image.flaticon.com/icons/svg/417/417745.svg" alt="" width="140" height="140">
+            <div class="caption">
+                <h3>MongoDB</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, molestiae id? Deserunt autem odit laboriosam consequuntur nesciunt cupiditate nemo placeat quae voluptatem quibusdam.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="https://image.flaticon.com/icons/svg/417/417746.svg" alt="" width="140" height="140">
+            <div class="caption">
+                <h3>ExpressJS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, molestiae id? Deserunt autem odit laboriosam consequuntur nesciunt cupiditate nemo placeat quae voluptatem quibusdam.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="https://image.flaticon.com/icons/svg/417/417747.svg" alt="" width="140" height="140">
+            <div class="caption">
+                <h3>NodeJS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, molestiae id? Deserunt autem odit laboriosam consequuntur nesciunt cupiditate nemo placeat quae voluptatem quibusdam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="https://image.flaticon.com/icons/svg/417/417748.svg" alt="" width="140" height="140">
+            <div class="caption">
+                <h3>AngularJS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, molestiae id? Deserunt autem odit laboriosam consequuntur nesciunt cupiditate nemo placeat quae voluptatem quibusdam.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="https://image.flaticon.com/icons/svg/417/417749.svg" alt="" width="140" height="140">
+            <div class="caption">
+                <h3>Angular 2</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, molestiae id? Deserunt autem odit laboriosam consequuntur nesciunt cupiditate nemo placeat quae voluptatem quibusdam.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="https://image.flaticon.com/icons/svg/417/417750.svg" alt="" width="140" height="140">
+            <div class="caption">
+                <h3>ReactJS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, molestiae id? Deserunt autem odit laboriosam consequuntur nesciunt cupiditate nemo placeat quae voluptatem quibusdam.</p>
+            </div>
+        </div>
+    </div>
+</div>
